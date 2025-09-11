@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rubashka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!-- top line -->
+    <header class="page-header">
+      <div class="container header-container">
+        <nav class="nav-header">
+          <a class="logo header-logo" href="./index.html"
+            >Soroch<span class="part-logo">.CO</span></a
+          >
+          <ul class="header-list">
+            <li class="nav-item">
+              <a class="nav-link current" href="./index.html">Про нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Асортимент</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:info@devstudio.com"
+                >info@sorochka.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+110001111111"
+                >+38 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile-menu -->
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list">
+              <li class="mobile-menu-contacts-item">
+                <a
+                  class="mobile-menu-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-menu-contacts-item">
+                <a class="mobile-menu-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-menu-social">
+            <ul class="mobile-menu-icon-list">
+              <li class="mobile-menu-icon-list-item">
+                <a
+                  class="icon-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <svg width="16" height="16" class="mobile-menu-icons">
+                    <use href="./images/icons.svg#icon-social_instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-icon-list-item">
+                <a class="icon-link" href="https://www.x.com/" target="_blank">
+                  <svg width="16" height="16" class="mobile-menu-icons">
+                    <use href="./images/icons.svg#icon-social_twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-icon-list-item">
+                <a
+                  class="icon-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg width="16" height="16" class="mobile-menu-icons">
+                    <use href="./images/icons.svg#icon-social_facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-icon-list-item">
+                <a
+                  class="icon-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg width="16" height="16" class="mobile-menu-icons">
+                    <use href="./images/icons.svg#icon-social_linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- title -->
+      <section class="solutions">
+        <div class="container">
+          <h1 class="solutions-title">Одягайтеся у нас</h1>
+
+          <button class="button-order-service" type="button" data-modal-open>
+            Зв'язатися з нами
+          </button>
+        </div>
+      </section>
+
+      <!-- principles -->
+      <section class="principles">
+        <div class="container">
+          <h2 class="visually-hidden">Principles</h2>
+          <ul class="principles-list">
+            <li class="principles-item">
+              <div class="principles-icon">
+                <svg class="icon-strategy_antenna" width="64" height="64">
+                  <use href="./images/icons.svg#icon-strategy_antenna"></use>
+                </svg>
+              </div>
+              <h3 class="principles-title">Стратегія</h3>
+              <p class="principles-text">
+                Ми знаємо головну проблему чоловіків: зранку шафа повна, а
+                вдягнути нічого. Тому наша стратегія — завалити вас сорочками
+                так, щоб вибір став приємним квестом.
+              </p>
+            </li>
+            <li class="principles-item">
+              <div class="principles-icon">
+                <svg class="icon-punctuality_clock" width="64" height="64">
+                  <use href="./images/icons.svg#icon-punctuality_clock"></use>
+                </svg>
+              </div>
+              <h3 class="principles-title">Пунктуальність</h3>
+              <p class="principles-text">
+                Сорочка потрібна «на вчора»? Не проблема! Ми доставимо її
+                швидше, ніж ви зможете виговорити слово «гудзик».
+              </p>
+            </li>
+            <li class="principles-item">
+              <div class="principles-icon">
+                <svg class="icon-diligence_diagram" width="64" height="64">
+                  <use href="./images/icons.svg#icon-diligence_diagram"></use>
+                </svg>
+              </div>
+              <h3 class="principles-title">Старанність</h3>
+              <p class="principles-text">
+                Ми перевірили всі тренди: у смужку, в клітинку, однотонні, з
+                крокодилом, без крокодила… Щоб ризик виглядати «як дід у 90-х»
+                був зведений до нуля.
+              </p>
+            </li>
+            <li class="principles-item">
+              <div class="principles-icon">
+                <svg class="icon-technologies_astronaut" width="64" height="64">
+                  <use
+                    href="./images/icons.svg#icon-technologies_astronaut"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="principles-title">Технології</h3>
+              <p class="principles-text">
+                Наші сорочки настільки технологічні, що здається, ніби вони самі
+                шукають для вас краватку. А ми просто обожнюємо вирішувати
+                головну проблему — як одягнути чоловіка так, щоб його дружина
+                сказала «ого!».
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- our team -->
+      <section class="team">
+        <div class="container">
+          <h2 class="title-team">Наша команда</h2>
+          <ul class="team-list">
+            <li class="team-item">
+              <img
+                srcset="./images/гена.png 1x, ./images/гена@2x.png 2x"
+                src="./images/гена.png"
+                alt="Генадій"
+                width="264"
+                height="260"
+              />
+              <div class="signature">
+                <h3 class="name-employee">Генадій</h3>
+                <p class="team-prof">Головний продавець</p>
+                <ul class="team-icon-list">
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.x.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="team-item">
+              <img
+                srcset="./images/максим_adapted.png"
+                src="./images/максим_adapted.png"
+                alt="Максим"
+                width="264"
+                height="260"
+              />
+              <div class="signature">
+                <h3 class="name-employee">Максим</h3>
+
+                <p class="team-prof">Розробчик технологій</p>
+                <ul class="team-icon-list">
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.x.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="team-item">
+              <img
+                srcset="./images/вася.png 1x, ./images/вася.png 2x"
+                src="./images/вася.png"
+                alt="Валера"
+                width="264"
+                height="260"
+              />
+              <div class="signature">
+                <h3 class="name-employee">Валера</h3>
+                <p class="team-prof">Логіст міжпланетного рівня</p>
+                <ul class="team-icon-list">
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.x.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="team-item">
+              <img
+                srcset="./images/валера – копія.png 1x ,./images/валера.png 2x
+               
+                "
+                src="./images/валера.png"
+                alt="Вася"
+                width="264"
+                height="260"
+              />
+              <div class="signature">
+                <h3 class="name-employee">Васілій</h3>
+                <p class="team-prof">Завідучий складом</p>
+                <ul class="team-icon-list">
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.x.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="team-icon-list-item">
+                    <a
+                      class="icon-link"
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                    >
+                      <svg width="16" height="16" class="team-icons">
+                        <use
+                          href="./images/icons.svg#icon-social_linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- our potfolio -->
+      <section class="portfolio">
+        <div class="container">
+          <h2 class="portfolio-title">Базарні будні</h2>
+
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <div class="container-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="./images/banking-app-desk.png" />
+                  <source
+                    media="(min-width: 758px)"
+                    srcset="./images/banking-app-desk.png" />
+                  <source
+                    media="(max-width: 757px)"
+                    srcset="./images/banking-app-desk.png" />
+
+                  <img
+                    src="./images/banking-app-desk.png"
+                    alt="banking-app"
+                    width="360"
+                    height="300"
+                /></picture>
+                <p class="p-overlay">
+                  Гена демонструє жовту сорочку так, ніби це шедевр моди з
+                  Парижа. З його посмішкою будь-яка покупка здається угодою року
+                  — навіть якщо вдома вже 15 таких самих.
+                </p>
+              </div>
+              <div class="servise-card">
+                <h3 class="servise">Головний продавець сорочок</h3>
+                <p class="description-servise">Пропозиція</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="container-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="./images/cashless-payment-desk.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/cashless-payment-desk.png"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/cashless-payment-desk.png"
+                  />
+                  <img
+                    src="./images/cashless-payment-desk.png"
+                    alt="cashless-payment"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+                <p class="p-overlay">
+                  Блондинка приміряла сорочку, а Гена поставив лайк «в реальному
+                  житті». Каже: «Вам пасує!», хоча подумки вже рахує прибуток.
+                </p>
+              </div>
+              <div class="servise-card">
+                <h3 class="servise">Консультант з іміджу</h3>
+                <p class="description-servise">Консультація</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="container-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="./images/meditation-app-desk.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/meditation-app-desk.png"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/meditation-app-desk.png"
+                  />
+                  <img
+                    src="./images/meditation-app-desk.png"
+                    alt="meditation-app"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+                <p class="p-overlay">
+                  Рудоволоса клієнтка вийшла на подіум… прямо між рядами з
+                  сорочками. Гена в шоці: не знає, чи робити комплімент, чи
+                  рахувати втрати товару.
+                </p>
+              </div>
+              <div class="servise-card">
+                <h3 class="servise">Фешн-експерт базарного масштабу</h3>
+                <p class="description-servise">Експертиза</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="container-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="./images/taxi-service-desk_adapted.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/taxi-service-desk_adapted.png"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/taxi-service-desk_adapted.png"
+                  />
+                  <img
+                    src="./images/taxi-service-desk_adapted.png"
+                    alt="taxi-service"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+                <p class="p-overlay">
+                  Вона приміряє сорочку, а Гена рахує, скільки смужок влізе в
+                  чек.
+                </p>
+              </div>
+              <div class="servise-card">
+                <h3 class="servise">Стиліст-аматор</h3>
+                <p class="description-servise">Проектування</p>
+              </div>
+            </li>
+
+            <li class="portfolio-item">
+              <div class="container-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="./images/screen-Illustrations-desk_adapted.png" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/screen-Illustrations-desk_adapted.png" />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/screen-Illustrations-desk_adapted.png" />
+                  <img
+                    src="./images/screen-Illustrations-desk_adapted.png"
+                    alt="screen-Illustrations"
+                    width="360"
+                    height="300"
+                /></picture>
+                <p class="p-overlay">
+                  Спортсмен показує м’язи, а Гена — свіжу колекцію. Ніхто не
+                  знає, хто виграє: біцепс чи стрейч-тканина.
+                </p>
+              </div>
+              <div class="servise-card">
+                <h3 class="servise">Тренер по сорочках</h3>
+                <p class="description-servise">Конкурентність</p>
+              </div>
+            </li>
+
+            <li class="portfolio-item">
+              <div class="container-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="./images/online-courses-desk_adapted.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/online-courses-desk_adapted.png"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/online-courses-desk_adapted.png"
+                  />
+                  <img
+                    src="./images/online-courses-desk_adapted.png"
+                    alt="online-courses"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+                <p class="p-overlay">
+                  Коли клієнт прийшов у шапці «Чебурашка» і з біцепсом на
+                  півряду, Гена задумався: може, пора продавати ще й протеїн?
+                </p>
+              </div>
+              <div class="servise-card">
+                <h3 class="servise">Конкурентолог</h3>
+                <p class="description-servise">Різносторонність</p>
+              </div>
+            </li>
+
+            <li class="portfolio-item">
+              <div class="container-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset=".//images/22_22_14_adapted.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/22_22_14_adapted.png"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/22_22_14_adapted.png"
+                  />
+                  <img
+                    src="./images/22_22_14_adapted.png"
+                    alt="online-courses"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+                <p class="p-overlay">
+                  Гена вирішив, що найкраща реклама сорочок — це м’язи.
+                  Конкуренти в шоці, покупці в захваті, а плечі вже не влазять у
+                  стандартний розмір.
+                </p>
+              </div>
+              <div class="servise-card">
+                <h3 class="servise">Мотиватор із продажів</h3>
+                <p class="description-servise">Цілеспрямованість</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="container-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="./images/22_57_28_adapted.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/22_57_28_adapted.png"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/22_57_28_adapted.png"
+                  />
+                  <img
+                    src="./images/22_57_28_adapted.png"
+                    alt="online-courses"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+                <p class="p-overlay">
+                  Гена мчить на чорному джипі, бо сорочки самі себе не довезуть.
+                  Каже, що машина — для роботи, але виглядає як президент
+                  сорочкового синдикату.
+                </p>
+              </div>
+
+              <div class="servise-card">
+                <h3 class="servise">Доставщик VIP-рівня</h3>
+                <p class="description-servise">Доставка</p>
+              </div>
+            </li>
+            <li class="portfolio-item">
+              <div class="container-img">
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="./images/22_24_53_adapted.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/22_24_53_adapted.png"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="./images/22_24_53_adapted.png"
+                  />
+                  <img
+                    src="./images/22_24_53_adapted.png"
+                    alt="online-courses"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
+                <p class="p-overlay">
+                  Після важкого дня торгівлі сорочками Гена приймає не звичайну
+                  ванну, а «економічну баню». Гроші гріють краще за піну.
+                </p>
+              </div>
+              <div class="servise-card">
+                <h3 class="servise">Фінансовий директор по-своєму</h3>
+                <p class="description-servise">Аналітика</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-page">
+      <div class="container footer-container">
+        <div class="footer-publicity">
+          <a class="logo footer-logo" href="./index.html"
+            >Soroch<span class="part-logo-footer">.CO</span></a
+          >
+          <p class="footer-text">
+            Прокачайте продажі сорочок так, щоб навіть Чебурашка просив знижку —
+            цифровий маркетинг допоможе!
+          </p>
+        </div>
+        <div class="social-footer">
+          <p class="social-title">Social media</p>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="">
+                <svg width="24" height="24" class="footer-icons">
+                  <use href="./images/icons.svg#icon-social_instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="">
+                <svg width="24" height="24" class="footer-icons">
+                  <use href="./images/icons.svg#icon-social_twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="">
+                <svg width="24" height="24" class="footer-icons">
+                  <use href="./images/icons.svg#icon-social_facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="">
+                <svg width="24" height="24" class="footer-icons">
+                  <use href="./images/icons.svg#icon-social_linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-title">Підпишись</p>
+          <form class="footer-form-items">
+            <label class="footer-label-class">
+              <input
+                class="footer-form"
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+              />
+            </label>
+
+            <button class="footer-btn" type="submit">
+              Підпишись
+              <svg width="24" height="24" class="footer-form-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal-window -->
+
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <form>
+          <div class="modal-forms-element">
+            <label class="modal-forms-item-label" for="user-name">Name</label>
+            <div class="modal-forms-type">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-forms-item"
+              />
+              <svg class="modal-forms-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-forms-element">
+            <label class="modal-forms-item-label" for="user-phone">Phone</label>
+            <div class="modal-forms-type">
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                class="modal-forms-item"
+              />
+              <svg class="modal-forms-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-forms-element">
+            <label class="modal-forms-item-label" for="user-mail">Email</label>
+            <div class="modal-forms-type">
+              <input
+                type="email"
+                name="user-mail"
+                id="user-mail"
+                class="modal-forms-item"
+              />
+              <svg class="modal-forms-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-forms-element-four">
+            <label class="modal-forms-item-label" for="user-comment"
+              >Comment</label
+            >
+            <textarea
+              class="modal-forms-item modal-forms-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="modal-forms-checkbox">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
+              class="modal-forms-check visually-hidden"
+            />
+
+            <label class="modal-checkbox-label" for="user-privacy">
+              <span class="modal-checkbox-icon">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <span>
+                I accept the terms and conditions of the
+                <a class="modal-checkbox-text-part" href="">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
+
+          <button class="modal-checkbox-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
