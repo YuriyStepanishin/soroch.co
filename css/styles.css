@@ -630,6 +630,7 @@ button {
   gap: 48px;
   justify-content: center;
 }
+
 .portfolio-item {
   flex: 1 1 100%;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -637,7 +638,7 @@ button {
 }
 
 .portfolio-item:hover .p-overlay {
-  transform: translateY(65%);
+  transform: translateY(30%);
 }
 .container-img {
   position: relative;
